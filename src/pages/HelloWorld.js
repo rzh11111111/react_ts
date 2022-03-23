@@ -1,14 +1,11 @@
-import React from 'react';
-export default class HelloWorld extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="title head" style={{ color: 'red', fontSize: '16px' }}>
-        hello world
-      </div>
-    );
-  }
+import { useState } from 'react';
+export default function HelloWorld() {
+  const [styleData] = useState({ color: 'red', fontSize: '16px' });
+  const [isHead] = useState(true);
+  const [className] = useState('title');
+  return (
+    <div className={`${className} ${isHead ? 'head' : ''}`} style={styleData}>
+      hello world
+    </div>
+  );
 }
