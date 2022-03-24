@@ -5,6 +5,10 @@ export default function IndexPage() {
   const [styleData] = useState({ color: 'red', fontSize: '16px' });
   const [isHead] = useState(true);
   const [className] = useState('title');
+
+  const handleClick = () => {
+    console.log('点击事件');
+  };
   return (
     <div>
       {/* 除了传递字符不用{}，其他都要 */}
@@ -15,6 +19,9 @@ export default function IndexPage() {
         className={className}
         title="hello vue"
         num={1}
+        onClick={() => {
+          handleClick();
+        }}
       />
     </div>
   );
