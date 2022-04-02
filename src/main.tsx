@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+//引入antd的样式
+import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { ConfigProvider } from 'antd'
+import zhCN from 'antd/es/locale/zh_CN'
 
 function App() {
   const [count, setCount] = useState(0)
