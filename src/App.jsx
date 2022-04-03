@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { ConfigProvider } from 'antd'
-import zhCN from 'antd/es/locale/zh_CN'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +16,7 @@ function App() {
           </button>
         </p>
         <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
+          Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
         <p>
           <a
