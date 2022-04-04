@@ -1,0 +1,16 @@
+.left-nav {
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff; 
+    &_avatar {
+        margin-top: 20px;
+        text-align: center;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
